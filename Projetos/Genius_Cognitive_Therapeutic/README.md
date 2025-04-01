@@ -68,3 +68,9 @@ O projeto demonstrou um grande potencial para
 aplicações práticas, tanto no âmbito do entretenimento quanto no treinamento e 
 reabilitação cognitiva. O sistema cumpre seus objetivos de forma eficaz e 
 apresenta uma base sólida para futuras melhorias ou adaptações.
+
+---
+
+## Licença
+
+GNU License - GNU GPL-3.0
