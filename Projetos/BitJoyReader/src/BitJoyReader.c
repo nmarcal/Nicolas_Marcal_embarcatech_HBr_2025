@@ -1,6 +1,6 @@
 
-#include <stdio.h>          // Para funções de entrada/saída como printf
-#include <string.h>         // Para manipulação de strings como memset
+#include <stdio.h>          // Para funções de entrada/saída
+#include <string.h>         // Para manipulação de strings 
 #include "pico/stdlib.h"    // Biblioteca padrão do Raspberry Pi Pico
 #include "hardware/adc.h"   // Para acesso ao conversor analógico-digital (ADC)
 #include "hardware/i2c.h"   // Para comunicação I2C
