@@ -21,7 +21,7 @@ Faça um programa em C para ler os valores convertidos digitalmente do joystick 
 
 ---
 
-## Imagens e Vídeo
+## Imagens
 
 <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_1_bitjoyreader.jpg?raw=true" alt="imagem_1" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_2_bitjoyreader.jpg?raw=true" alt="imagem_2" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_3_bitjoyreader.jpg?raw=true" alt="imagem_3" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_4_bitjoyreader.jpg?raw=true" alt="imagem_4" width="175" height="200">
 
