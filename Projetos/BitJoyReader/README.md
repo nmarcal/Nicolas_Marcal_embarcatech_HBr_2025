@@ -17,16 +17,13 @@ Faça um programa em C para ler os valores convertidos digitalmente do joystick 
 
 ## Componentes e Pinagens
 
-![componentes_bitjoyreader](https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/baa711a372729c03f74e5ff6cd14b28df2069e3f/Projetos/BitJoyReader/assets/componentes_bitjoyreader.jpg)
+![componentes_bitjoyreader](https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/lista_componentes_bitjoyreader.jpg)
 
 ---
 
 ## Imagens e Vídeo
 
-<img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/main/Projetos/Genius_Cognitive_Therapeutic/assets/amarelo.jpg?raw=true" alt="amarelo" width="150" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/main/Projetos/Genius_Cognitive_Therapeutic/assets/azul.jpg?raw=true" alt="azul" width="150" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/main/Projetos/Genius_Cognitive_Therapeutic/assets/verde.jpg?raw=true" alt="verde" width="150" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/main/Projetos/Genius_Cognitive_Therapeutic/assets/magenta.jpg?raw=true" alt="magenta" width="150" height="200">
-
-Vídeo do sistema em uso: [Projeto Final - Unidade 7 - Embarcatech](https://www.youtube.com/watch?v=RCcmscVKlQI)
-
+<img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_1_bitjoyreader.jpg?raw=true" alt="imagem_1" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_2_bitjoyreader.jpg?raw=true" alt="imagem_2" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_3_bitjoyreader.jpg?raw=true" alt="imagem_3" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_4_bitjoyreader.jpg?raw=true" alt="imagem_4" width="175" height="200">
 
 
 ---
