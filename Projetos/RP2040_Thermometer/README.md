@@ -1,29 +1,40 @@
-# Leitor de Sinais Analógicos do Joystick - BitJoyReader
+# Monitor da temperatura interna da MCU - RP2040 Thermometer
 
 ## Objetivo do projeto
 
-Faça um programa em C para ler os valores convertidos digitalmente do joystick da BitDogLab. Os valores podem ser mostrados no terminal ou então no display OLED.
+Faça um programa em C para ler a temperatura interna do RP2040. Converta a leitura do ADC em um valor em ºC.
 
 ---
 
 ## Lógica
 
- sistema funciona como um leitor de comandos analógicos, no qual o usuário move o joystick e observa os valores correspondentes no display OLED. Para cada movimento:
-- Leitura: Os eixos X e Y são lidos continuamente pelo ADC (0 a 4095);
-- Processamento: Uma zona morta (±100) filtra pequenas variações próximas ao centro (2048);
-- Feedback: Valores fora da zona morta são exibidos no OLED.
+ Sistema funciona como um termômetro digital, no qual o sensor interno do RP2040 mede a temperatura e exibe o valor no display OLED. Para cada medição:
+ 
+Leitura:
+- O ADC (Conversor Analógico-Digital) lê o valor bruto do sensor de temperatura.
+
+Processamento:
+- Converte o valor ADC para tensão (0-3.3V);
+- Aplica fórmula de calibração do RP2040 para obter a temperatura em Celsius;
+- Arredonda o valor para um número inteiro antes da exibição.
+
+Feedback:
+- Terminal Serial: Exibe a temperatura com uma casa decimal (para debug);
+- Display OLED: Mostra apenas o valor inteiro (ex: "Temp 27 C").
+
+### Baseado no Exemplo 0 do Ebook [Conversores A/D](https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/55325bc779a6c883225aefc7e85041756fc25491/Projetos/RP2040_Thermometer/docs/24.37M2%20%E2%80%93%20U4C8O123E%20-%20Ebook.pdf) do curso Embarcatech Fase 1 - HBR.
 
 ---
 
 ## Componentes e Pinagens
 
-![componentes_bitjoyreader](https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/lista_componentes_bitjoyreader.jpg)
+![componentes_RP2040_thermometer](https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/1cad82778a3d4be7664d2af7ff3eb444e6ee64c8/Projetos/RP2040_Thermometer/assets/lista_componentes_RP2040_thermometer.jpg)
 
 ---
 
-## Imagens e Vídeo
+## Imagens
 
-<img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_1_bitjoyreader.jpg?raw=true" alt="imagem_1" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_2_bitjoyreader.jpg?raw=true" alt="imagem_2" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_3_bitjoyreader.jpg?raw=true" alt="imagem_3" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/28053f7e21764f6adc83a7eaf08bf9c1da6132eb/Projetos/BitJoyReader/assets/imagem_4_bitjoyreader.jpg?raw=true" alt="imagem_4" width="175" height="200">
+<img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/1cad82778a3d4be7664d2af7ff3eb444e6ee64c8/Projetos/RP2040_Thermometer/assets/imagem_1_RP2040_thermometer.jpg?raw=true" alt="imagem_1" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/1cad82778a3d4be7664d2af7ff3eb444e6ee64c8/Projetos/RP2040_Thermometer/assets/imagem_2_RP2040_thermometer.jpg?raw=true" alt="imagem_2" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/1cad82778a3d4be7664d2af7ff3eb444e6ee64c8/Projetos/RP2040_Thermometer/assets/imagem_3_RP2040_thermometer.jpg?raw=true" alt="imagem_3" width="175" height="200"> <img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/1cad82778a3d4be7664d2af7ff3eb444e6ee64c8/Projetos/RP2040_Thermometer/assets/imagem_4_RP2040_thermometer.jpg?raw=true" alt="imagem_4" width="175" height="200">
 
 
 ---
