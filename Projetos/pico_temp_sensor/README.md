@@ -1,19 +1,26 @@
-# Estruturação de código para arquitetura modular - Pi Pico Led
+# Teste unitário - Pico Temp Sensor
 
 ## Objetivo do projeto
 
-- Crie um driver led_embutido.c que use diretamente a API cyw43_arch.
+O ADC interno da Raspberry Pi Pico W pode ser usado para medir a temperatura através de um canal especial (sensor embutido). O valor lido do ADC (12 bits) deve ser convertido para graus Celsius usando a fórmula da documentação oficial:
 
-- Implemente um hal_led.c com a função hal_led_toggle() que abstraia o driver.
+![formula_temp](https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/072a3584dd07730be622c119470bfb10fd323c66/Projetos/pico_temp_sensor/assets/formula_temp.jpg?raw=true)
 
-- Escreva um main.c simples no diretório app/ que apenas use a função da HAL para piscar o LED.
+Essa função converte a tensão lida do sensor de temperatura para Celsius, assumindo Vref = 3.3V e resolução de 12 bits.
 
+### Tarefa:
+
+- Implemente a função float adc_to_celsius(uint16_t adc_val);
+
+- Escreva uma função de teste unitário que verifica se a função retorna o valor correto (com margem de erro) para uma leitura simulada de ADC. Sugere-se o uso da biblioteca Unity para o teste unitário.
+
+- Use um teste com valor de ADC conhecido (ex.: para 0.706 V, a temperatura deve ser 27 °C).
 
 ---
 
 ## Componentes e Pinagens
 
-![componentes_Pi_Pico_Led](https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/3ce7e2e6115050c1d91a3aea1d1f884df37e27f8/Projetos/Pi_Pico_Led/assets/lista_componentes1.jpg)
+![componentes_Pico_Temp_Sensor](https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/072a3584dd07730be622c119470bfb10fd323c66/Projetos/pico_temp_sensor/assets/lista_componentes1.jpg)
 
 ---
 
