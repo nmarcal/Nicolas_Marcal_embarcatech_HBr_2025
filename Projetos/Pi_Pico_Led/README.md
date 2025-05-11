@@ -17,6 +17,12 @@
 
 ---
 
+## Imagem
+
+<img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/00f1b14e7eae53b05ce703bc1f2951ce1bb5da4e/Projetos/Pi_Pico_Led/assets/pi_pico_led_1.jpg?raw=true" alt="imagem_1" width="150" height="200">
+
+---
+
 ## Execução
 
 1. Abra o projeto no VS Code, usando o ambiente com suporte ao SDK do Raspberry Pi Pico (CMake + compilador ARM);
