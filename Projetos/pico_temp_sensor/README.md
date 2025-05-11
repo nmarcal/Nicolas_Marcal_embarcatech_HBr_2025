@@ -1,4 +1,4 @@
-# Teste unitário - Pico Temp Sensor
+# Pico Temp Sensor - Teste unitário
 
 ## Objetivo do projeto
 
@@ -33,12 +33,31 @@ Essa função converte a tensão lida do sensor de temperatura para Celsius, ass
 
 ## Execução
 
-1. Abra o projeto no VS Code, usando o ambiente com suporte ao SDK do Raspberry Pi Pico (CMake + compilador ARM);
-2. Compile o projeto normalmente (Ctrl+Shift+B no VS Code ou via terminal com cmake e make);
-3. Conecte sua BitDogLab via cabo USB e coloque a Pico no modo de boot (pressione o botão BOOTSEL e conecte o cabo);
-4. Copie o arquivo .uf2 gerado para a unidade de armazenamento que aparece (RPI-RP2);
-5. A Pico reiniciará automaticamente e começará a executar o código.
-   
+**Execução Simplificada**  
+
+1. **Abra o projeto no VS Code**  
+   - Certifique-se de ter o **MinGW** instalado (para compilar no Windows).  
+
+2. **Compile o programa de testes**  
+   - No terminal do VS Code (**Ctrl + `**), execute:  
+     ```powershell
+     gcc src/app/temperature_sensor.c src/tests/test_temperature.c src/include/unity/unity.c -I src/app -I src/include/unity -o tests.exe -lm
+     ```
+
+3. **Execute os testes**  
+   - No mesmo terminal, rode:  
+     ```powershell
+     .\tests.exe
+     ```  
+   - Saída esperada (se tudo passar):  
+     ```
+     test_adc_conversion:PASS  
+     test_adc_extremes:PASS  
+     test_adc_intermediate:PASS  
+     -----------------------  
+     3 Tests 0 Failures 0 Ignored  
+     OK  
+     ```
 ---
 
 ## Licença
