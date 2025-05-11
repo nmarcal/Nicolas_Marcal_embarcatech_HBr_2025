@@ -24,6 +24,13 @@ Essa função converte a tensão lida do sensor de temperatura para Celsius, ass
 
 ---
 
+## Imagens
+<img src="https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/bee01a61ab17e8d2342140f4021349eb7a25012a/Projetos/pico_temp_sensor/assets/imagem_pico_temp_sensor.jpg?raw=true" alt="imagem_1" width="175" height="200">
+
+![imagem_2](https://github.com/nmarcal/Nicolas_Marcal_embarcatech_HBr_2025/blob/c8d0d0c5562afcc2bb5f0c507f45693fdc69d5be/Projetos/pico_temp_sensor/assets/imagem_tests.jpg)
+
+---
+
 ## Execução
 
 1. Abra o projeto no VS Code, usando o ambiente com suporte ao SDK do Raspberry Pi Pico (CMake + compilador ARM);
